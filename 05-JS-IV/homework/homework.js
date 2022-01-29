@@ -180,6 +180,21 @@ function agregarMetodoCalculoDescuento(producto) {
   return producto;
 
 }
+var obj = {
+  nombre: "Objeto",
+  log: function(){
+    this.nombre = "Cambiado";
+    console.log(this)
+
+    var cambia = function( str ){
+      this.nombre = str;
+    }
+    cambia("Holaa!");
+    console.log(this);
+  }
+}
+
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
